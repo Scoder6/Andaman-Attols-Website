@@ -16,6 +16,7 @@
 
 </head>
 <style>
+    
             .phone-link {
             position: relative;
             display: inline-block;
@@ -82,6 +83,205 @@
         }
         .moon {
           border-radius: 10px;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .banner video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .logo {
+            margin: 10px;
+        }
+        nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Slightly transparent background */
+    z-index: 1000; /* Ensures the navbar stays above other elements */
+    padding: 10px 0;
+}
+
+.banner .content {
+    padding-top: 80px; /* Adds space below the fixed navbar */
+}
+
+     
+
+
+
+        
+
+        .title {
+            margin-top: 50px;
+        }
+
+        .title h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .locations,
+        .package {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .package-title {
+            margin-bottom: 30px;
+        }
+
+        .location-content,
+        .package-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .col-content,
+        .box {
+            width: calc(50% - 10px);
+            margin-bottom: 20px;
+        }
+
+        .col-content img,
+        .box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .box h3 {
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+
+        .box h4 {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+       
+
+        
+
+
+        .end {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .col-content,
+            .box {
+                width: 100%;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            .title h1 {
+                font-size: 2.5em;
+            }
+
+            .title p {
+                font-size: 1em;
+            }
+
+            
+
+            .banner {
+                padding-bottom: 50px;
+            }
+
+            .button {
+                margin-top: 0;
+            }
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .dark-mode .card {
+            background-color: #2c2c2c;
+            border-color: #444;
+        }
+
+        .dark-mode .form-control {
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #444;
+        }
+
+        .dark-mode .btn-submit {
+            color: #e0e0e0;
+        }
+
+        .dark-mode .footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+        }
+
+        .moon {
+            border-radius: 10px;
         }
         
 </style>
@@ -154,12 +354,12 @@
         </div></a>
         
         <div class="col-content">
-            <img src="./files/Rangat.jpg" style="width: 400px;" alt="">
+            <img src="./files/Rangat.jpg" >
             <h5>Rangat</h5>
         </div></a>
 
         <div class="col-content">
-            <img src="./files/diglipur.jpg" style="width: 400px;" alt="">
+            <img src="./files/diglipur.jpg" >
             <h5>Diglipur</h5>
         </div></a>
 
