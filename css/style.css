@@ -694,3 +694,53 @@ nav ul li a{
     font-size: 20px;
     color: rgb(197, 167, 44);
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: transparent; /* Adjust color as needed */
+    color: white;
+}
+
+.logo {
+    width: 60px;
+    
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.navbar li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white; /* Adjust color as needed */
+    font-size: 24px; /* Default font size */
+    white-space: nowrap; /* Prevent text from wrapping */
+    transition: font-size 0.3s ease;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex: 1;
+        overflow-x: auto; /* Enable horizontal scrolling if needed */
+        justify-content: flex-start; /* Align items to start */
+    }
+
+    .navbar a {
+        margin: 0 5px; /* Reduce margin for smaller screens */
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
