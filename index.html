@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANDAMAN ATTOLS</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="./files/logo-modified.png" type="image/x-icon" >
+    <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<style>
+            .phone-link {
+            position: relative;
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .phone-link::after {
+            content: "Give Us a Call";
+            position: absolute;
+            bottom: -40px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%) scale(0);
+            background: #333;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            white-space: nowrap;
+            opacity: 0;
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        }
+
+        .phone-link:hover::after {
+            transform: translateX(-50%) scale(1);
+            opacity: 1;
+        }
+
+        .phone-link:hover {
+            color: #007bff;
+            text-decoration: underline;
+        }
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        
+
+        .dark-mode .card {
+            background-color: #2c2c2c;
+            border-color: #444;
+        }
+
+        .dark-mode .form-control {
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #444;
+        }
+
+        .dark-mode .btn-submit {
+            color: #e0e0e0;
+        }
+
+        .dark-mode .footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+        }
+        .moon {
+          border-radius: 10px;
+        }
+        
+</style>
+<body>
+
+<!-- Background Video & Header -->
+
+    <div class="banner">
+        <video src="./files/bgvid.mp4" type="video/mp4" autoplay muted loop></video>
+    
+    <!-- Header -->
+
+    <div class="content" id="home"> 
+        <nav>
+            <img src="./files/logo.jpg" class="logo" alt="Logo" style="width: 60px;">
+          
+            
+            <ul class="navbar">
+                <li>
+                    <!-- <h1 style="margin-right: 35vw;  ">ANDAMAN ATTOLS</h1> -->
+                    <a href="#home">Home</a>
+                    <a href="#locations">Locations</a>
+                    <a href="#package">Packages</a>
+                    <a href="./about.html">About Us</a>
+    
+                      <img id="dark-mode-toggle" class="btn-submit" src="https://img.icons8.com/?size=100&id=36EqOe9P0ePR&format=png&color=F61616" alt="" width="30px" >
+             
+                     
+                </li>
+            </ul>
+        </nav>
+ 
+        <div class="title">
+            <h1>Andaman Attols</h1>
+            <p>Plan your trip with us and travel around the world with the most affordable packages!</p>
+            <a href="./register.html" class="button">Register Now!</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Locations -->
+
+<section class="locations" id="locations">
+    <div class="package-title">
+        <h2>Locations</h2>
+    </div>
+
+    <div class="location-content">
+    
+
+        <div class="col-content">
+            <img src="./files/Havelock.avif" alt="">
+            <h5>Havelock</h5>
+        </div></a>
+
+        <div class="col-content" >
+            <img src="./files/NeilIsland.jpg" alt="">
+            <h5>Neil</h5>
+        </div></a>
+
+        <div class="col-content">
+            <img src="./files/l7.jpg" alt="">
+            <h5>Port Blair</h5>
+        </div></a>
+
+        <div class="col-content">
+            <img src="./files/l4.jpg" alt="">
+            <h5> Baratang</h5>
+        </div></a>
+        
+        <div class="col-content">
+            <img src="./files/Rangat.jpg" style="width: 400px;" alt="">
+            <h5>Rangat</h5>
+        </div></a>
+
+        <div class="col-content">
+            <img src="./files/diglipur.jpg" style="width: 400px;" alt="">
+            <h5>Diglipur</h5>
+        </div></a>
+
+
+    </div>
+</section>
+
+<!-- Best of Andaman -->
+
+<section class="package" id="package">
+    <div class="package-title">
+        <h2>Best of Andaman</h2>
+    </div>
+
+    <div class="package-content">
+        
+        <div class="box">
+            <div class="image">
+                <a href="exoticAndaman.html"><img src="./files/exoticc.jpg" alt="" ></a>
+                <h3>18,000/-</h3>
+                <h4>EXOTIC ANDAMAN</h4>
+        </div>
+        <div class="dest-content">
+            <div class="location">  
+              
+            </div>
+        </div>
+        </div>
+        
+        <div class="box">
+            <div class="image">
+                <a href="TropicalIslands.html"><img src="./files/tropicall.webp" alt=""></a>
+                <h3>32,000/-</h3>
+                <h4>TROPICAL ANDAMAN</h4>
+            </div>
+        
+        <div class="dest-content">
+          
+        </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <a href="AdventureDelight.html"><img src="./files/adventure.jpg" alt=""></a>
+                <h3>22,000/-</h3>
+                <h4>ADVENTURE DELIGHT</h4>
+            </div>
+        
+         <div class="dest-content">
+           
+        </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <a href="baratang.html"><img src="./files/baratang.webp" alt=""></a>
+                <h3>23,000/-</h3>
+                <h4>BARATANG SPECIAL</h4>
+            </div>
+        
+        <div class="dest-content">
+          
+        </div>
+        </div>
+
+    
+
+</section>
+
+<!-- Honeymoon Delight  -->
+
+<section>
+    <div class="package-title">
+        <h2>Honeymoon Delight</h2>
+    </div>
+
+    <div class="package-content">
+        
+        <div class="box">
+            <div class="image">
+                <a href="./Honeymoon.html"><img src="./files/honey.webp" alt="" style=" margin: 0 auto; display: block;"></a>
+                <h3>Rs.25,000/-</h3>
+            </div>
+        
+        <div class="dest-content">
+            <div class="location">
+                
+            </div>
+        </div>
+        </div>
+        
+
+</section>
+
+
+
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./files/Terms.pdf" download="Terms & Conditions.pdf">Terms & Conditions</a></li>
+                                        <li><a href="./files/INCLUDES , EXCLUDES (2).pdf" download="Includes & Excludes.pdf">Includes & Excludes</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.instagram.com/andaman_attols?igsh=ZjdmZDdyNW1zYzVt&utm_source=qr" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/917063927931" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:andamanattols@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+                </div>
+            </div>
+            <div class="footlinks">
+                <a href="review.html"><h4>REVIEW</h4></a>
+                <div class="social">
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2024 Andaman Attols All Rights Reserved.<br>Website developed by: Saptash Chaubey</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+
+</body>
+</html>
